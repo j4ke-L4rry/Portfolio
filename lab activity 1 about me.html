@@ -2,9 +2,16 @@
 <html>
 <head>
     <title>About Me</title>
-	<base href="https://universityofbohol.edu.ph/">
+    <base href="https://universityofbohol.edu.ph/" target= "_blank">
 </head>
 
+<header>
+    <h1>Header here</h1>
+
+    <hgroup>
+        <h2>just another heading</h2>
+    </hgroup>
+</header>
 <body style="background-color: rgb(193, 171, 171); 
              background-image: url('https://wallpapers.com/images/high/forks-washington-mountain-trees-jwl5ajz3dwv7yk7h.webp'); 
              background-size: cover;">
@@ -20,7 +27,7 @@
     <img src="https://i.pinimg.com/736x/66/79/43/6679437f3210b9fa190e94d5297ca82e.jpg" 
 		 usemap="#workmap"
          width="200" height="300" 
-         style="float:left;
+         style="display:block; margin:auto; 
                 border:3px solid black; 
                 border-radius:10px; 
                 box-shadow:5px 5px 15px rgba(0,0,0,0.5);">
@@ -30,7 +37,7 @@
 		href="https://github.com/j4ke-L4rry">
 			
 		
-
+<main>
     <p style="color:white;">
         Hi! I am <b>Jake Larry Villacarlos Gonzales</b>, but you can simply call me <b>Jake</b>.
         I'm a first-year Computer Science student at the 
@@ -42,7 +49,7 @@
     <p style="color:white;">
         Why <abbr title="University of Bohol">UB</abbr>? My family has a long history with the University, 
         even before it officially became one. 
-        Many of them studied or worked here.
+        Many of them studied or worked here. 
         <span style="color:yellow;">My grandmother graduated when it was still Rafael Palma College, and my uncle, Eng. Liberato Lupot Jr., served as the CETAFA dean. 
         Several relatives continue to teach and work in the institution today.</span>
     </p>
@@ -59,16 +66,16 @@
 		making it one of the earliest professional programs offered by the institution. 
 		It has since produced generations of lawyers, judges, and public servants in Bohol and beyond.
 		</p>
-		
+		<section>
     <p style="color:white;">
         <span style="color:red;">I chose UB because it's close to home and feels comfortable - almost like an extension of home itself.</span>
         The environment is familiar, welcoming, and supportive, 
         which makes it easier for me to focus on my studies and grow both academically and personally.
         I hope that this program will open opportunities for me and guide me toward achieving my career goals. 
         Thank you for taking the time to read my story.
-		
+		</section>
 	</p>
-	
+	</main>
 	<Article>
 	<h3 style="Background-color:Yellow"> 
 	University of Bohol
@@ -99,9 +106,11 @@
 
     </ul>
 
+<nav>
+    <a href=" https://universityofbohol.edu.ph/scholarship-and-financial-aids/">scholarship-and-financial-aids</a>
+</nav>
 
-
-    <button style="background-color: green;"><b>Green</b></button>
+    <button style="background-color: green;"><a href="https://www.figma.com/colors/green/"><b>Green</b></button></a>
 	 
 	 <p>
 		<address style="color:white; text-align: center;">
@@ -113,19 +122,84 @@
 		
 	</p>
 	
-	<p>
-		<bdo dir="rtl" style="color:yellow">Happy@UB!</bdo>
-	</p>
+	<audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    </audio>
 	
-	<blockquote style="color:lightyellow; font-style:italic; border-left:4px solid white; padding-left:10px;"> 
-	"Education is the most powerful weapon which you can use to change the world." – Nelson Mandela 
-	</blockquote>
-	
-	<p style="color:white">
-	This is a sample sentence.<br>This has two sentences.</br>
-	</p>
-	
-	
+<a href="programs-offered/">Programs Offered</a>
+
+<blockquote  style="color:aliceblue" cite="https://www.nu.edu/blog/qualities-of-a-good-teacher/#:~:text=Great%20teachers%20pair%20strong%20human,learning%20science%20continue%20to%20evolve.">
+    Great teachers pair strong human <br>qualities (empathy, patience, respect) with high-impact instructional 
+    skills (engagement, adaptability,</br>
+    creativity) to meet diverse learners' needs. Adaptability and lifelong 
+    learning are essential as student populations, technology, and learning science continue to evolve.
+</blockquote>
+
+<canvas id="myCanvas" width="100" height="100" style="border:1px solid black;"></canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "16px Arial";
+  ctx.fillText("Test", 20, 50);
+</script>
+
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:rgb(187, 0, 255)">
+    <col style="background-color:rgb(0, 85, 255)">
+  </colgroup>
+  <tr>
+    <th>TEST TABLE</th>
+    <th>names</th>
+    <th>age</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>juan</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Joan</td>
+    <td>22</td>
+  </tr>
+</table>
+
+
+  
+
+    <table>
+          <caption>Just a sample caption</caption>
+    <tr>
+        <th>area A</th>
+        <th>area B</th>
+    </tr>
+    <tr>
+        <td>area A</td>
+        <td>area B</td>
+
+      
+     </tr>
+
+ </table>
+
+
+ <search>
+  <form>
+    <input name="programs-offered" id="programs-offered" placeholder="Search universityofbohol">
+  </form>
+</search>
+
+
+ 
+<p style="color:aliceblue"> <bdi> 123def</bdi></p>
+<p style="color:aliceblue">Username: <bdi>שלום</bdi></p>
+
+<p style="color:aliceblue">Sample sentence with no bdo</p>
+<p style="color:aliceblue"><bdo dir="rtl">Sample sentence with bdo.</bdo></Sample></p>
+
+
     <h1 style="background-color: rgb(2, 90, 61); 
                border: 4px solid #2a2a2a; 
                box-shadow: 5px 5px 15px rgba(0,0,0,0.5); 
@@ -135,4 +209,6 @@
     </h1>
 
 </body>
+
+<footer> just a footer</footer>
 </html>
