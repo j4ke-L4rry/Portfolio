@@ -1,0 +1,145 @@
+.header-con {
+    border-style: solid;
+    border-color: rgb(10, 14, 12);
+    background-size: contain;
+    background-color: rgb(68, 69, 150);
+    padding: 10px;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    display:flex;
+ 
+   
+}
+
+.text-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+    border: none;        
+}
+
+.Manga {
+    border-style: solid;
+    border-color: rgb(10, 14, 12);
+    background-size: contain;
+    background-color: rgb(45, 156, 91);
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display:flex
+}
+
+.Tiptip {
+    border-style: solid;
+    border-color: rgb(10, 14, 12);
+    background-size: contain;
+    background-color: rgb(75, 3, 31);
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display:flex
+}
+
+
+.head {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; 
+    font-size: 3em;
+    margin: 0;
+    text-align: left;
+}
+
+.paragraph {
+    position: relative;
+    border: solid 2px rgb(6, 6, 6);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: justify;
+    border-radius: 15px;
+    overflow: auto;
+    background-clip: padding-box;
+    overflow-y: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding-left:50px;
+    min-height:30vh;
+    height: auto;
+}
+
+.paragraph::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(149, 148, 148, 0.767); 
+    z-index: 0;
+}
+
+.paragraph p, h3, li, h4, h5, .logo, ul{
+    position: relative;
+    z-index: 1;
+}
+
+.officials{
+    position: relative;
+    border: solid 2px rgb(6, 6, 6);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    overflow: auto;
+    background-clip: padding-box;
+    overflow-y: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding-left:50px;
+    min-height:30vh;
+    height: auto;
+}
+
+.officials::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(149, 148, 148, 0.767); 
+    z-index: 0;
+}
+
+
+.logo {
+    width: 60px;         
+    height: 60px;   
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+li {
+    padding: 1.5px;
+    list-style-type: none;
+}
+
+.subheading {
+
+   margin:0;
+   padding-left: 75px;
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
