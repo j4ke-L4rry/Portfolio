@@ -5,116 +5,129 @@
 <style>
     body {
         background-color:hsl(192, 32%, 58%);
-        margin:10px;
-        background-image: url("chick.gif"), url("happy.gif"), url("brain.gif");
-        background-size: 200px, 300px, cover; 
-        background-position:bottom, right, bottom; 
-        background-repeat: no-repeat, no-repeat, no-repeat; 
-        background-blend-mode: normal; 
+        margin:0;
+        background-image: url(citylight.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Comic Sans MS";
     } 
-
-    body a {
-        text-decoration: none;
-        color:red;
-    }
 
     .container {
         display: flex;
-        align-items: flex-start;
     }
 
-    h1 { 
-        color: rgb(170, 16, 16); 
-        border-style: outset; 
-        background-color: white; 
-        border-color: black; 
-        text-align: center; 
-        font-size: 40px; 
-        width: 300px;  
-        height: 800px;  
-        margin-right: 20px; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center;  
-        
-        }
-
-    .line {
+    .side {
+        position: fixed;
         display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;                
+        width: 100px;               
+        background-color: white;    
+        border-right: 2px solid ;
+        background-image: url(starrynight.jpg);
     }
 
-    .line div {
-        width: 200px;
-        height: 200px;
-        background-color: rgba(250, 235, 215, 0.7);
-        border: solid 1px black;
-        padding: 10px;
-        box-sizing: border-box;
-        color: black;
-        text-align: center;
+    .title {
+        writing-mode:sideways-lr;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(251, 255, 0);
+
+        flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    span a {
-        color:red;
+       
+    
     }
 
     .button {
         border: solid 2px;
-        display:inline-block;
-        text-align:center;
         background-color: white;
-        cursor: pointer;
-        margin-top: 20px;
-    }
-
-    .button:hover {
-        transform: scale(1.2);
-        transition: transform 0.9s ease;
+        margin-bottom: 20px;
+        padding: 2px 10px;
     }
 
     .button a {
         text-decoration:none;
         color: rgb(151, 9, 9);
-        cursor: pointer;
         font-weight: bolder;
+    }
+
+    .line {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 200px);
+        gap: 15px;
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .line div {
+        background-color: rgba(250, 235, 215, 0.124);
+        border: solid 1px rgba(0, 0, 0, 0.39);
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(stars.jpg);
+        color: white;
+    }
+
+    span {
+        padding-top: 20px;
+        color:rgb(251, 255, 0);
+        display:block;
+    }
+
+    .home {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        ;
     }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Points to Ponder</h1>
-    <div class="line">
-        <div>“You have to believe in yourself when no one else does.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Serena Williams</a></span></div>
-        <div>“When you have a dream, you’ve got to grab it and never let go.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Carol Burnett</a></span></div>
-        <div>“Spread love everywhere you go. Let no one ever come without leaving happier.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Mother Teresa</a></span></div>
-        <div>“Be yourself; everyone else is already taken.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Oscar Wilde</a></span></div>
-        <div>“The biggest adventure you can take is to live the life of your dreams.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Oprah Winfrey</a></span></div>
-        <div>“The only thing we have to fear is fear itself.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Franklin D. Roosevelt</a></span></div>
-        <div>“Some people want it to happen, some wish it would happen, others make it happen.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Michael Jordan</a></span></div>
-        <div>“It does not matter how slowly you go, as long as you do not stop.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Confucius</a></span></div>
-        <div>“Find out who you are and do it on purpose.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Dolly Parton</a></span></div>
-        <div>“For me, becoming isn’t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn’t end.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Michelle Obama</a></span></div>
-        <div>“You can be everything. You can be the infinite amount of things that people are.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Kesha</a></span></div>
-        <div>“Always go with your passions. Never ask yourself if it’s realistic or not.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Deepak Chopra</a></span></div>
-        <div>“Do one thing every day that scares you.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Eleanor Roosevelt</a></span></div>
-        <div>“It is never too late to be what you might have been.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">George Elliot</a></span></div>
-        <div>“Always do your best. What you plant now, you will harvest later.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Og Mandino</a></span></div>
-        <div>“In three words I can sum up everything I’ve learned about life: It goes on.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Robert Frost</a></span></div>
-        <div>“You can’t help what you feel, but you can help how you behave.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Margaret Atwood</a></span></div>
-        <div>“No need to hurry. No need to sparkle. No need to be anybody but oneself.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Virginia Woolf</a></span></div>
-        <div>“It is better to be hated for what you are than to be loved for what you are not.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Andre Gide</a></span></div>
-        <div>“Life has got all those twists and turns. You’ve got to hold on tight and off you go.” — <span><a href="https://www.prevention.com/life/a44189224/life-quotes/" target="_blank">Nicole Kidman</a></span></div>
-    </div>
-</div>
 
-<div class="button">
-    <a href="index.html" target="_top">Home</a>
+    <div class="side">
+        <div class="title">POINTS TO PONDER</div>
+        <div class="button">
+            <a href="index.html" target="_top">
+                <img src="button.png" alt="home" class="home">
+            </a>
+        </div>
+    </div>
+
+    <div class="line">
+        <div>“You have to believe in yourself when no one else does.” — <span>Serena Williams</span></div>
+        <div>“When you have a dream, you’ve got to grab it and never let go.” — <span>Carol Burnett</span></div>
+        <div>“Spread love everywhere you go. Let no one ever come without leaving happier.” — <span>Mother Teresa</span></div>
+        <div>“Be yourself; everyone else is already taken.” — <span>Oscar Wilde</span></div>
+        <div>“The biggest adventure you can take is to live the life of your dreams.” — <span>Oprah Winfrey</span></div>
+        <div>“The only thing we have to fear is fear itself.” — <span>Franklin D. Roosevelt</span></div>
+        <div>“Some people want it to happen, some wish it would happen, others make it happen.” — <span>Michael Jordan</span></div>
+        <div>“It does not matter how slowly you go, as long as you do not stop.” — <span>Confucius</span></div>
+        <div>“Find out who you are and do it on purpose.” — <span>Dolly Parton</span></div>
+        <div>“For me, becoming isn’t about arriving somewhere or achieving a certain aim. I see it instead as forward motion...” — <span>Michelle Obama</span></div>
+        <div>“You can be everything. You can be the infinite amount of things that people are.” — <span>Kesha</span></div>
+        <div>“Always go with your passions. Never ask yourself if it’s realistic or not.” — <span>Deepak Chopra</span></div>
+        <div>“Do one thing every day that scares you.” — <span>Eleanor Roosevelt</span></div>
+        <div>“It is never too late to be what you might have been.” — <span>George Elliot</span></div>
+        <div>“Always do your best. What you plant now, you will harvest later.” — <span>Og Mandino</span></div>
+        <div>“In three words I can sum up everything I’ve learned about life: It goes on.” — <span>Robert Frost</span></div>
+        <div>“You can’t help what you feel, but you can help how you behave.” — <span>Margaret Atwood</span></div>
+        <div>“No need to hurry. No need to sparkle. No need to be anybody but oneself.” — <span>Virginia Woolf</span></div>
+        <div>“It is better to be hated for what you are than to be loved for what you are not.” — <span>Andre Gide</span></div>
+        <div>“Life has got all those twists and turns. You’ve got to hold on tight and off you go.” — <span>Nicole Kidman</span></div>
+    </div>
 </div>
 
 </body>
