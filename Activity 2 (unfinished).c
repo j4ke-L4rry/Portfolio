@@ -16,8 +16,6 @@
 
 void add() {
     
- 
-  
     
     for(int i = 0; i < 5; i++) {
         
@@ -73,13 +71,14 @@ void find() {
     void delete() {
         //step 2
         if (count == 0) {
-            printf("Array is empty. Nothing to delete.");
+            printf("Array is empty. Nothing to delete.\n");
+            return;
         }
         //step 3 and step 4
-        printf("Enter the element to delete.");
+        printf("Enter the element to delete: ");
         scanf("%d", &target);
         //step 5
-        found == false;
+        found = false;
 
         for (int i=0; i < count; i++) {
             if (array[i]==target){
@@ -112,16 +111,16 @@ void find() {
         //step 2
         if(count < 2){
             printf("Not enough elements to sort.");
-            break;
+            return;
         }
         //step 3 and step 4
         printf("Display: Sort in (A) Ascending or (D) Descending order?");
         scanf(" %c", &choice);
         
         //step 5
-        for(i=0; i < count; i++) {
+        for(int i=0; i < count; i++) {
             swapped=false;
-            for(j=0; j < count - 2 - i; j++){
+            for(int j=0; j < count - 1 - i; j++){
                 if(choice == 'A' && array[j]>array[j+1]) {
                     temp = array[j];
                     array[j] = array[j + 1];
@@ -144,11 +143,11 @@ void find() {
             }
         }
         //step 6
-        if(choice = 'A'){
+        if(choice == 'A'){
             printf("Array sorted in Ascending order.");
         }
         //step 7
-        else if(choice ='D'){
+        else if(choice =='D'){
             printf("Array sorted in Descending order.");
         }
         //step 8
@@ -156,7 +155,7 @@ void find() {
             printf("Invalid choice. Returning to menu.");
         }
 
-        return 0;
+    
 
     }
 
@@ -166,13 +165,12 @@ void find() {
         //step 2
         if(count==0){
             printf("The array is empty.");
-            break;
         }
         //step 3
         printf("Current elements in the array: ");
         //step 4
-        for(i=0; i < count; i++){
-            printf("Position %d: %d\n");
+        for(int i=0; i < count; i++){
+            printf("Position %d: %d\n", i + 1, array[i]);
         }
         //step 5
         printf("Total elements: [%d]", count);
@@ -180,10 +178,49 @@ void find() {
 
     int main(){
 
+        int choose;
 
-        add();
+    while (1) {
+       printf("Menu of operations:\n1. Add 5 elements to the array\n2. Search for an element in the array\n3. Delete an element from the array\n4. Sort the elements (Ascending or Descending)\n5. Print the final elements in the array\n");
+       printf("Enter your choice: \n");
+       scanf("%d", &choose);
+
+      
+
+       switch(choose) {
+        case 1:
+            add();
+            break;
+        
+        case 2:
+            find();
+            break;
+        
+        case 3:
+            delete();
+            break;
+
+        case 4:
+            sort();
+            break;
+        
+        case 5:
+            Print();
+            break;
+        case 6:
+            printf("Exiting program...\n");
+            return 0;    
+        default:
+            printf("Invalid choice. Try again.\n");
+       }
+
+       
 
     }
+       
+
+
+}
 
     
   
