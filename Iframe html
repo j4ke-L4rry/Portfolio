@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFRAME</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <section>
+        <h1>NAVIGATION BAR</h1>
+
+        <nav class="navbar">
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <button class="dropbtn">About</button>
+
+                    <div class="box">
+                        <a href="aboutme_jake.html" target="frame">About me</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <button class="dropbtn">Products</button>
+
+                    <div class="box">
+                        <a href="quotes.html" target="quotes">Quotes</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </section>
+
+    <div class="container">
+
+        <section>
+            <iframe name="frame"></iframe>
+        </section>
+
+        <section>
+            <iframe name="quotes"></iframe>
+        </section>
+
+    </div>
+
+    <audio id="hover">
+        <source src="hover.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+
+        // hover sound
+        const links = document.querySelectorAll(".navbar a, .dropbtn");
+        const hover = document.getElementById("hover");
+
+        links.forEach(link => {
+            link.addEventListener("mouseenter", () => {
+                hover.currentTime = 0;
+                hover.play();
+            });
+        });
+
+        // dropdown toggle
+        const buttons = document.querySelectorAll(".dropbtn");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                const dropdown = button.nextElementSibling;
+
+                dropdown.classList.toggle("show");
+
+            });
+        });
+
+    </script>
+
+</body>
+</html>
