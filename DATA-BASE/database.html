@@ -16,31 +16,42 @@
 
     <form class="container">
         <div class="container1">
-        <label for="fname">Full name:</label>
-        <input type="text"><br>
-        <label for="studentID">Student ID:</label>
-        <input type="text"><br>
-        <label for="email">Email Address</label>
-        <input type="email"><br>
-        <h3>Gender</h3>
-        <label for="gender">Male</label>
-        <input type="radio"><br>
-        <label for="Female">Female</label>
-        <input type="radio"><br>
-        <label for="unknown">Prefer not to say</label>
-        <input type="radio"><br>
-        <h3>Year Level</h3>
-        <input type="checkbox">
-        <label for="1st">1st Year</label><br>
-        <input type="checkbox">
-        <label for="2nd">2nd Year</label><br>
-        <input type="checkbox">
-        <label for="3rd">3rd Year</label><br>
-        <input type="checkbox">
-        <label for="4th">4th Year</label><br>
+            <div>
+            <label for="fname">Full name:</label>
+            <input type="text"><br>
+            <label for="studentID">Student ID:</label>
+            <input type="text"><br>
+            <label for="email">Email Address</label>
+            <input type="email"><br>
+
+            <h3>Gender</h3>
+
+            <label for="gender">Male</label>
+            <input type="radio" name="gender"><br>
+            <label for="Female">Female</label>
+            <input type="radio" name="gender"><br>
+            <label for="unknown">Prefer not to say</label>
+            <input type="radio"name="gender"><br>
+            </div>
+
+            <div>
+            <h3>Year Level</h3>
+           
+            <input type="checkbox">
+            <label for="1st">1st Year</label><br>
+            <input type="checkbox">
+            <label for="2nd">2nd Year</label><br>
+            <input type="checkbox">
+            <label for="3rd">3rd Year</label><br>
+            <input type="checkbox">
+            <label for="4th">4th Year</label><br>
+            </div>
+
         </div>
 
         <div class="container2">
+
+            <div class="in2">
             <P>On a scale of 1 to 10 am I handsome?</P>
          
             <input type="radio" name="rating">
@@ -63,8 +74,8 @@
             <label for="nine">9</label>
             <input type="radio" name="rating">
             <label for="ten">10</label>
-        
-            
+            </div>
+            <div>
             <p>Feedback:</p>
             <input type="text">
             <p>Are you enjoying college?</p>
@@ -73,10 +84,11 @@
             <label for="yes">Yes</label>
             <input type="checkbox">
             <label for="no">No</label><br>
-            
+            <div>
             <input type="submit" value="submit">
             <input type="reset" value="cancel">
-   
+            </div>
+            </div>    
     
         </div>
     </form>
