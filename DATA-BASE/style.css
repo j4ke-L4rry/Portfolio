@@ -3,6 +3,11 @@ html, body {
 
 }
 
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
 .header {
     text-align: center;
 
@@ -11,6 +16,7 @@ html, body {
 .container{
     display:flex;
     flex-direction: row;
+    background-color: #25b85dad;
 }
 
 .container1 {
@@ -20,7 +26,16 @@ html, body {
     width:50%;
     min-height: 100vh;
     border: 1px solid black;
-    padding:3px;
+    padding:30px;
+}
+
+.container1 div{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    padding:15px;
+    background-color: rgb(43, 15, 168);
+    color:white;
 }
 
 .container2 {
@@ -28,13 +43,17 @@ html, body {
     flex-direction: column;
     flex:1;
     border:1px solid black;
-    padding:3px;
+    padding:30px;
 
 }
 
-.container2 div{
-    display:flex;
-    flex-direction: row;
+.in2{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    padding:15px;
+    background-color: rgb(43, 15, 168);
+    color:white;
     
 }
 
@@ -48,6 +67,11 @@ input[type="text"], input[type="email"]{
     height:25px;
     padding:5px;
     box-sizing: border-box;
+}
+
+input[type="submit"], input[type="reset"]{
+    width:100px;
+    margin: 10px;
 }
 
 .rating{
